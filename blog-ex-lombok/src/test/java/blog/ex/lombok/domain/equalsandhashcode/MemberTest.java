@@ -22,11 +22,11 @@ class MemberTest {
         assertThat(member1).isEqualTo(member2);
     }
 
-    @DisplayName("callSuper,  속성 학습테스트")
+    @DisplayName("callSuper, of, onParam  속성 학습테스트")
     @Test
     void attributionTest() {
-        ExcludeMember member1 = new ExcludeMember("럿고@gmail.com", "럿고", 28);
-        ExcludeMember member2 = new ExcludeMember("럿고@gmail.com", "럿고", 22);
+        AttributionMember member1 = new AttributionMember("럿고@gmail.com", "럿고", 28);
+        AttributionMember member2 = new AttributionMember("럿@gmail.com", "럿고", 22);
         assertThat(member1).isEqualTo(member2);
     }
 }
