@@ -4,7 +4,7 @@ import lombok.AccessLevel;
 import lombok.Value;
 import lombok.With;
 
-@Value()
+@Value
 public class Member {
     @With(AccessLevel.PRIVATE)
     String email;
