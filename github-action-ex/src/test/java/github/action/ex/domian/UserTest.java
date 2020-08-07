@@ -12,6 +12,6 @@ class UserTest {
     @Test
     void constructorTest() {
         User user = new User("럿고", 28);
-        assertThat(user.getAge()).isEqualTo(30);
+        assertThat(user.getAge()).isEqualTo(28);
     }
 }
