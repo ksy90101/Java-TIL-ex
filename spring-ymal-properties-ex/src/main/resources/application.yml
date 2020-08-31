@@ -1,0 +1,29 @@
+#@ConfigurationProperties
+fruit:
+  fruits:
+    - name: banana
+      color: yellow
+    - name: apple
+      color: red
+    - name: water melon
+
+number:
+  numbers:
+    - name: one
+      value: 1
+    - name: two
+      value: 2
+    - name: three
+      value: 3
+
+#@Value
+property:
+  test:
+    name: property depth test
+
+propertyTest: test
+
+propertyTestArray: a,b,c
+
+propertyTestList: a,b,c
+
