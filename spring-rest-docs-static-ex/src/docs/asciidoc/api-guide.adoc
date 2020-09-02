@@ -19,4 +19,6 @@ endif::[]
 [[resources-book-create]]
 === 정보 가져 오기
 
-operation::books/create[snippets='http-request,http-response,response-fields']
+include::{snippets}/books/create/http-request.adoc[]
+include::{snippets}/books/create/http-response.adoc[]
+include::{snippets}/books/create/response-fields.adoc[]
