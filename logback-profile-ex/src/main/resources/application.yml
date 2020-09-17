@@ -1,0 +1,39 @@
+spring:
+  profiles:
+    active: local
+
+logging:
+  config: classpath:logback/logback.xml
+---
+spring.profiles: local
+spring:
+  profiles:
+    include:
+      - console-logging
+logging:
+  level:
+    root: info
+---
+spring.profiles: dev
+spring:
+  profiles:
+    include:
+      - file-logging
+      - slack-logging
+logging:
+  level:
+    root: info
+  slack:
+    webhook-uri: "https://hooks.slack.com/services/~~" # webhookuri를 넣어주세요.
+---
+spring.profiles: prod
+spring:
+  profiles:
+    include:
+      - file-logging
+      - slack-logging
+logging:
+  level:
+    root: info
+  slack:
+    webhook-uri: "https://hooks.slack.com/services/~~" # webhookuri를 넣어주세요.
