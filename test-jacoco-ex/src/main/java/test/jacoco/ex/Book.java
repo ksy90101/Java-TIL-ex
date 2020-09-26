@@ -5,9 +5,8 @@ public class Book {
 
     private Member author;
 
-    public Book(String title, Member author) {
+    public Book(String title) {
         this.title = title;
-        this.author = author;
     }
 
     public String getTitle() {

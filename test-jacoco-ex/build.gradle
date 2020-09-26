@@ -44,7 +44,7 @@ jacocoTestCoverageVerification {
                 minimum = 0.70
             }
 
-            excludes = []
+            excludes = ['test.jacoco.ex.Application']
         }
     }
 }
